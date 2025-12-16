@@ -1,7 +1,35 @@
+# Perturbation Modeling Framework for Novel Design of SRC Kinase Inhibitors 
+
+Verkhivker Lab at Chapman University
+
+Authors: 
+
+* Ryan Kassab 
+* Keerthi Krishnan 
+* Gennady Verkhivker
+
+This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using generative learning methodologies and targeted perturbation modeling. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as the perturbation modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
+
+Files/Folders:
+
+* perturbation_experiment.ipynb file: Notebook containing the software for the use of variational autoencoder, the perturbation modeling experiments, and the post processing analysis
+* bayesian_optimizer.ipynb: Notebook that contains our runs of the Bayesian Optimzer used to create the unbiased and biased molecules.
+* visualization_notebook.ipynb: Notebook used to visualize some of the results from the Bayesian Optimizer. 
+* Fingerprinting_Similarity.ipynb: Notebook containing examples of similarity testing and implementation
+* chemvae and models: Folders containing the library of models and architecture used to build and compile ChemVAE (description of model files below)
+* data: data folder containing molecular data of our kinase inhibitors and GDB small molecule baseline retrieved from ZINC and GDB-17 database in SMILES format
+* examples: folder containing intro_to_chemvae.ipynb, a notebook with starter code on use of variational autoencoder
+* graphs: folder containing graphs for different stages of analysis in pipeline
+* results: folder containing files of any raw and curated generated data from experimentation
+* supplemental_info: Folder containing supplemental information of experiment results, such as final similarity data of generated molecules to known SRC Inhibitors, graphs represented chemical analysis of generated data, graphs containing analysis of chemical properties from initial data, and preliminary generated data, and a suppemental information guide. 
+* environment.yml: environment file to help set up ChemVAE environment with proper dependencies and tools
+* requirements.txt: text file stating dependencies for certain packages in environment setup
+
+
 ![chemical VAE](https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)
 =============
 
-This repository contains the framework and code for constructing a variational autoencoder (VAE) for use with molecular SMILES, as described in [doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572), with preprint at [https://arxiv.org/pdf/1610.02415.pdf](https://arxiv.org/pdf/1610.02415.pdf).
+This repository includes the framework and code for constructing a variational autoencoder (VAE) for use with molecular SMILES, as described in [doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572), with preprint at [https://arxiv.org/pdf/1610.02415.pdf](https://arxiv.org/pdf/1610.02415.pdf).
 
 In short, molecular SMILES are encoded into a code vector representation, and can be decoded from the code representation back to molecular SMILES. The autoencoder may also be jointly trained with property prediction to help shape the latent space. The new latent space can then be optimized upon to find the molecules with the most optimized properties of interest.
 
