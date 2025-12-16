@@ -7,16 +7,16 @@ In short, molecular SMILES are encoded into a code vector representation, and ca
 
 In our example, we perform encoding/decoding with the ZINC dataset, and shape the latent space on prediction on logP, QED, and SAS properties.
 
-#### Upcoming updates:
-- [ ] Updated Docker environment
-- [ ] Improved tutorial
+If you have a problem with using the chemvae package, it may be one of these issues:
+- Check the Jupyter notebook kernel to make sure that it is actually running in the correct environment.
+- Include the `import chemvae_ultimate_patch` that should fix some issues with different versions of TensorFlow and Keras. The patch should also fix the problems loading the VAE from the models directory.
 
 ## Questions, problems?
 Make a [github issue](https://github.com/aspuru-guzik-group/chemical_vae/issues/new) :smile:. Please be as clear and descriptive as possible.
 
 ## How to install
 ### Requirements: 
-An [Anaconda python environment](https://www.anaconda.com/download) is recommend.
+An [Anaconda Python environment](https://www.anaconda.com/download) is recommended.
 Check the environment.yml file, but primarily:
 - Python >= 3.5
 - Keras >= 2.0.0 && <= 2.0.7
@@ -28,7 +28,7 @@ Jupyter notebook is required to run the ipynb examples.
 Make sure that the [Keras backend](https://keras.io/backend/) is set to use Tensorflow
 
 ### via Anaconda (recommended way)
-Create a conda enviroment:
+Create a conda environment:
 ```
 conda env create -f environment.yml
 source activate chemvae
@@ -41,12 +41,12 @@ Assuming you have all the requirements:
 
 ## Example: ZINC dataset
 
-This repository contains an example of how to run the autoencoder on the zinc dataset.
+This repository contains an example of how to run the autoencoder on the Zinc dataset.
 
-First, take a look at the zinc directory. Parameters are set in the following jsons
+First, take a look at the zinc directory. Parameters are set in the following JSONs
   - **exp.json**  - Sets parameters for location of data, global experimental parameters number of epochs to run, properties to predict etc. 
 
-For a full description of all the parameters, see hyperparameters.py ; parameters set in exp.json will overwrite parameters in hyperparameters.py, and parameters set in params.json will overwrite parameters in both exp.json and hyperparameters.py
+For a full description of all the parameters, see hyperparameters.py; parameters set in exp.json will overwrite parameters in hyperparameters.py, and parameters set in params.json will overwrite parameters in both exp.json and hyperparameters.py
 
 Once you have set the parameters, run the autoencoder using the command from directory with exp.json: 
 
