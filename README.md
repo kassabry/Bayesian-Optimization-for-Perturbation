@@ -1,4 +1,4 @@
-# Perturbation Modeling Framework for Novel Design of SRC Kinase Inhibitors 
+# Bayesian Optimziation for Perturbation Modeling Framework for Novel Design of Family-Targeted Kinase Inhibitors 
 
 Verkhivker Lab at Chapman University
 
