@@ -1,0 +1,7 @@
+README.md
+setup.py
+chemvae.egg-info/PKG-INFO
+chemvae.egg-info/SOURCES.txt
+chemvae.egg-info/dependency_links.txt
+chemvae.egg-info/requires.txt
+chemvae.egg-info/top_level.txt
