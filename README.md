@@ -12,7 +12,7 @@ This repository contains the framework and code for instilling molecular transfo
 
 Files/Folders:
 
-* bayesian_optimizer.ipynb: Notebook that contains our runs of the Bayesian Optimzer used to create the unbiased and biased molecules.
+* Kinome-Scale Generative Machine Learning Framework.ipynb: Notebook that contains our runs of the Bayesian Optimzer used to create the unbiased and biased molecules.
 * visualization_notebook.ipynb: Notebook used to visualize some of the results from the Bayesian Optimizer. 
 * Fingerprinting_Similarity.ipynb: Notebook containing examples of similarity testing and implementation
 * chemvae and models: Folders containing the library of models and architecture used to build and compile ChemVAE (description of model files below)
