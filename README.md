@@ -1,4 +1,4 @@
-# Bayesian Optimziation for Perturbation Modeling Framework for Novel Design of Family-Targeted Kinase Inhibitors 
+# Kinome-Scale Generative Machine Learning Framework for Family-Targeted Kinase Inhibitor Design
 
 Verkhivker Lab at Chapman University
 
@@ -8,11 +8,10 @@ Authors:
 * Keerthi Krishnan 
 * Gennady Verkhivker
 
-This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using generative learning methodologies and targeted perturbation modeling. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as the perturbation modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
+This repository contains the framework and code for instilling molecular transformations of kinase inhibitors using generative learning methodologies for family-targeted designs. The software written is a combination of utilizing the ChemVAE architecture developed by Jennifer Wei, Benjamin Sanchez-Lengeling, Dennis Sheberla, Rafael Gomez-Bomberelli, and Alan Aspuru-Guzik (https://github.com/aspuru-guzik-group/chemical_vae/blob/master/aux_data/banner.png?raw=true)[doi:10.1021/acscentsci.7b00572](http://pubs.acs.org/doi/abs/10.1021/acscentsci.7b00572) as well as the modeling architecture developed by the Verkhivker Lab at Chapman University to perform our molecular transformation experiments. Below is a brief description of the folders and files present in the repository.
 
 Files/Folders:
 
-* perturbation_experiment.ipynb file: Notebook containing the software for the use of variational autoencoder, the perturbation modeling experiments, and the post processing analysis
 * bayesian_optimizer.ipynb: Notebook that contains our runs of the Bayesian Optimzer used to create the unbiased and biased molecules.
 * visualization_notebook.ipynb: Notebook used to visualize some of the results from the Bayesian Optimizer. 
 * Fingerprinting_Similarity.ipynb: Notebook containing examples of similarity testing and implementation
